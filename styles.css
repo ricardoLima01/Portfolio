@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root{
+    --cor--primaria: #0A0E1A;
+    --cor--secundaria: rgba(30, 36, 51, 0.3);
+    --cor--titulo: #E4E8F0;
+    --cor--texto:#8B92A8;
+    --cor--botao: #00D9FF;
+    --cor--tecnologia: #7c3aed;
+    --cor--hover: #1e2433;
+    --cor--borda: rgba(0, 217, 255, 0.1);
+    --cor--grid: #131720;
+
+    --fonte--primaria: 'Inter', sans-serif;
+    --fonte--secundaria: 'Space Grotesk', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--cor--texto);
+}
+
+.cabecalho{
+    border-bottom: solid 1px var(--cor--borda);
+    padding: 1.2% 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor--primaria);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.link__navegacao{
+    padding: 8px;
+    color: var(--cor--texto);
+    font-weight: 500;
+}
+
+.link__navegacao:hover{
+    color: var(--cor--titulo);
+}
+
+.botao__contato{
+    color: var(--cor--primaria);
+    background-color: var(--cor--botao);
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.nome{
+    font-size: 20px;
+    color: var(--cor--titulo);
+}
+
+strong{
+    color: var(--cor--botao);
+}
+
+.apresentacao{
+    padding: 16%;
+}
+
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo__biografia{
+    width: 50%;
+}
+
+.conteudo__foto {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin-bottom: 24px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.biografia__titulo{
+    color: var(--cor--titulo);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.biografia__subtitulo{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.biografia__texto{
+    margin-bottom: 32px;
+}
+
+.conteudo__botao{
+    margin-bottom: 32px;
+    padding-left: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.botao__link{
+    background-color: var(--cor--botao);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: var(--cor--primaria);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: solid 1px var(--cor--borda);
+    color: var(--cor--titulo);
+}
+
+.botao__secundario:hover{
+    background-color: var(--cor--hover);
+}
+
+.conteudo__icone{
+    display: flex;
+    gap: 25px;
+    padding-right: 10px;
+}
+
+.sobre-mim{
+    background-color: var(--cor--secundaria);
+    padding: 80px 0;
+}
+
+.sobre-mim__conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio{
+    text-align: center;
+    margin-bottom: 48px;
+    padding: 0 30%;
+}
+
+.inicio__titulo{
+    font-size: 20px;
+    color: var(--cor--titulo);
+    margin-bottom: 16px;
+}
+
+.container__grid{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+.grid__conteudo{
+    background-color: var(--cor--grid);
+    border: solid 1px var(--cor--borda);
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 15px;
+    width: 500px;
+}
+
+.skills__icone{
+    max-width: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0, 217, 255, 0.1);
+}
+
+.skills__titulo{
+    color: var(--cor--titulo);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.grid__jornada{
+    border: solid 1px var(--cor--borda);
+    border-radius: 10px;
+    background-color: var(--cor--grid);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 700px;
+}
+
+.projeto{
+    padding: 80px 0;
+    background-color: var(--cor--primaria);
+}
+
+.conteudo__grid{
+    border: solid 1px var(--cor--borda);
+    background-color: var(--cor--grid);
+    border-radius: 10px;
+    max-width: 360px;
+    min-width: 360px;
+    padding-bottom: 20px;
+}
+
+.grid__imagem{
+    max-width: 360px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.grid__apresentacao{
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.grid__titulo{
+    color: var(--cor--titulo);
+    font-size: 18px;
+}
+
+.grid__texto{
+    margin: 15px 0;
+}
+
+.apresentacao__tecnologia{
+    display: flex;
+    gap: 8px;
+}
+
+.tecnologia{
+    background-color: var(--cor--tecnologia);
+    border-radius: 10px;
+    padding: 4px 6px;
+    color: var(--cor--titulo);
+    font-size: 12px;
+}
+
+.grid__botao{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.botao__navegacao{
+    background-color: var(--cor--botao);
+    color: var(--cor--primaria);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 4.5px 0;
+    justify-content: center;
+    gap: 5px;
+}
+
+.botao__codigo{
+    color: var(--cor--titulo);
+    background-color: transparent;
+    border: solid 1px var(--cor--borda);
+    background-color: var(--cor--primaria);
+}
+
+.botao__codigo:hover{
+    background-color: var(--cor--hover);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.contato{
+    background-color: var(--cor--secundaria);
+    padding: 80px 0;
+}
+
+.grid__contato{
+    background-color: var(--cor--grid);
+    border: solid 1px var(--cor--borda);
+    border-radius: 15px;
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+}
+
+.link__email{
+    color: var(--cor--texto);
+}
+
+.link__email:hover{
+    color: var(--cor--titulo);
+}
+
+.grid__secundaria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.contato__redes-sociais{
+    display: flex;
+    gap: 10px;
+}
+
+.rodape{
+    background-color: var(--cor--primaria);
+    text-align: center;
+    padding: 2%;
+}
