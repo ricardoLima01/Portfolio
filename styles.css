@@ -233,6 +233,12 @@ strong{
     background-color: var(--cor--primaria);
 }
 
+.projetos{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
 .conteudo__grid{
     border: solid 1px var(--cor--borda);
     background-color: var(--cor--grid);
