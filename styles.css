@@ -159,6 +159,15 @@ strong{
     padding-right: 10px;
 }
 
+.icone{
+    transition: transform 0.3s ease; /* Animação suave */
+    cursor: pointer;
+}
+
+.icone:hover {
+  transform: scale(1.2); 
+}
+
 .sobre-mim{
     background-color: var(--cor--secundaria);
     padding: 80px 0;
@@ -235,7 +244,7 @@ strong{
 
 .projetos{
     display: flex;
-    justify-content: center;
+    justify-content: center;  
     gap: 32px;
 }
 
@@ -266,6 +275,7 @@ strong{
 
 .grid__texto{
     margin: 15px 0;
+    padding-bottom: 30;
 }
 
 .apresentacao__tecnologia{
