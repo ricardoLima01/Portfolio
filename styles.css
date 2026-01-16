@@ -160,7 +160,7 @@ strong{
 }
 
 .icone{
-    transition: transform 0.3s ease; /* Animação suave */
+    transition: transform 0.3s ease; 
     cursor: pointer;
 }
 
